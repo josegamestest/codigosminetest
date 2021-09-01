@@ -1,0 +1,6 @@
+--codigo mostra uma mensagem, da psicao e rotacao do bloco ao ser colocado no mundo
+
+on_place = function(itemstack, placer, pointed_thing)
+    minetest.chat_send_all(minetest.serialize(pointed_thing))
+    return minetest.rotate_node(itemstack, placer, pointed_thing)
+end,
