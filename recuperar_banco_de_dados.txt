@@ -1,0 +1,7 @@
+Recuperando banco de dados corrompido com comando terminal
+
+Abra o terminal no diretorio que esta o 
+Crie uma copia do banco de dados para backup
+E use o comando  abaixo trocando pelo nome do seu banco de dados e  o novo nome que sera dado para a nova copia recuperada
+
+sqlite3 nome_do_banco_de_dados_corrompido.db ".recover" | sqlite3 nome_do_banco_de_dados_recuperado.db
